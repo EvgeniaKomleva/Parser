@@ -1,0 +1,22 @@
+{
+    "DateInterval": [
+        {
+            "id": 122,
+            "year_ordinal": {
+                "value": 2018,
+                "annotations": {
+                    "annotationStart": 3,
+                    "annotationEnd": 7
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2018,
+                "annotations": {
+                    "annotationStart": 3,
+                    "annotationEnd": 12
+                }
+            }
+        }
+    ],
+    "documentText": " \u0432 2018 \u0433\u043e\u0434\u0443 "
+}

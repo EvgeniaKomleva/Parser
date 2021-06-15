@@ -1,0 +1,29 @@
+{
+    "DateInterval": [
+        {
+            "id": 112,
+            "month_ordinal": {
+                "value": 4,
+                "annotations": {
+                    "annotationStart": 23,
+                    "annotationEnd": 29
+                }
+            },
+            "year_ordinal": {
+                "value": 2019,
+                "annotations": {
+                    "annotationStart": 30,
+                    "annotationEnd": 34
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2019,
+                "annotations": {
+                    "annotationStart": 30,
+                    "annotationEnd": 39
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0434\u043e \u0434\u0435\u0441\u044f\u0442\u043e\u0433\u043e \u0430\u043f\u0440\u0435\u043b\u044f 2019 \u0433\u043e\u0434\u0430 "
+}

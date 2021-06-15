@@ -1,0 +1,22 @@
+{
+    "DateInterval": [
+        {
+            "id": 128,
+            "day_ordinal": {
+                "value": "01",
+                "annotations": {
+                    "annotationStart": 3,
+                    "annotationEnd": 8
+                }
+            },
+            "day_ordinal_stop": {
+                "value": "21",
+                "annotations": {
+                    "annotationStart": 12,
+                    "annotationEnd": 17
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441 01.02 \u043f\u043e 21.12 "
+}

@@ -1,0 +1,36 @@
+{
+    "DateInterval": [
+        {
+            "id": 127,
+            "day_ordinal": {
+                "value": "01",
+                "annotations": {
+                    "annotationStart": 3,
+                    "annotationEnd": 8
+                }
+            },
+            "day_ordinal_stop": {
+                "value": "12",
+                "annotations": {
+                    "annotationStart": 20,
+                    "annotationEnd": 27
+                }
+            },
+            "year_ordinal": {
+                "value": 2003,
+                "annotations": {
+                    "annotationStart": 9,
+                    "annotationEnd": 13
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2012,
+                "annotations": {
+                    "annotationStart": 23,
+                    "annotationEnd": 27
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441 01.02.2003 \u043f\u043e 21.12.2012 "
+}

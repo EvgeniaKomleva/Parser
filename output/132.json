@@ -1,0 +1,22 @@
+{
+    "DateInterval": [
+        {
+            "id": 133,
+            "week_ordinal": {
+                "value": 4,
+                "annotations": {
+                    "annotationStart": 14,
+                    "annotationEnd": 30
+                }
+            },
+            "quarter_ordinal": {
+                "value": 1,
+                "annotations": {
+                    "annotationStart": 31,
+                    "annotationEnd": 47
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441\u043e \u0432\u0442\u043e\u0440\u043e\u0439 \u043f\u043e \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u0443\u044e \u043d\u0435\u0434\u0435\u043b\u044e \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043a\u0432\u0430\u0440\u0442\u0430\u043b\u0430 "
+}

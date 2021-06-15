@@ -1,0 +1,29 @@
+{
+    "DateInterval": [
+        {
+            "id": 104,
+            "month_ordinal": {
+                "value": 4,
+                "annotations": {
+                    "annotationStart": 7,
+                    "annotationEnd": 13
+                }
+            },
+            "year_ordinal": {
+                "value": 2010,
+                "annotations": {
+                    "annotationStart": 14,
+                    "annotationEnd": 18
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2010,
+                "annotations": {
+                    "annotationStart": 14,
+                    "annotationEnd": 23
+                }
+            }
+        }
+    ],
+    "documentText": " \u043f\u043e\u0441\u043b\u0435 \u0430\u043f\u0440\u0435\u043b\u044f 2010 \u0433\u043e\u0434\u0430 "
+}

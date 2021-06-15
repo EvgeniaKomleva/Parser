@@ -1,0 +1,43 @@
+{
+    "DateInterval": [
+        {
+            "id": 137,
+            "month_ordinal": {
+                "value": 1,
+                "annotations": {
+                    "annotationStart": 3,
+                    "annotationEnd": 9
+                }
+            },
+            "month_ordinal_stop": {
+                "value": 5,
+                "annotations": {
+                    "annotationStart": 13,
+                    "annotationEnd": 16
+                }
+            },
+            "year_ordinal": {
+                "value": 2019,
+                "annotations": {
+                    "annotationStart": 17,
+                    "annotationEnd": 21
+                }
+            },
+            "quarter_ordinal": {
+                "value": 3,
+                "annotations": {
+                    "annotationStart": 37,
+                    "annotationEnd": 51
+                }
+            },
+            "year_modifier": {
+                "value": -1,
+                "annotations": {
+                    "annotationStart": 52,
+                    "annotationEnd": 65
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441 \u044f\u043d\u0432\u0430\u0440\u044f \u043f\u043e \u043c\u0430\u0439 2019 \u0438 \u0441 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043f\u043e \u0442\u0440\u0435\u0442\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b \u043f\u0440\u043e\u0448\u043b\u043e\u0433\u043e \u0433\u043e\u0434\u0430 "
+}

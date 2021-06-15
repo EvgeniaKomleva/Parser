@@ -38,13 +38,13 @@ Date = fact(
     # ['year', 'quater', 'month','week',  'day']
     ['week_ordinal', 'week_cardinal', 'week_modifier', 'week_start_ordinal', 'week_end_ordinal',
 
-     'quarter_ordinal', 'quarter_cardinal', 'quarter_start_ordinal', 'quarter_end_ordinal',
+     'quarter_ordinal', 'quarter_cardinal', 'quarter_start_ordinal', 'quarter_end_ordinal','quarter_modifier',
 
      'month_modifier', 'month_ordinal', 'month_cardinal',
 
      'year_modifier', 'year_cardinal', 'year_start_modifier', 'year_end_modifier',
 
-     'half_year', 'count',
+     'half_year', 'count', 'year_ordinal','year_ordinal',
 
      'day_ordinal', 'day_cardinal', 'day_modifier',
 
@@ -58,10 +58,10 @@ class Date(Date):
         from natasha import obj
         return obj.Date(  # self.year ,self.quater, self.month , self.week,self.day ,
             self.week_ordinal, self.week_cardinal, self.week_modifier, self.week_start_ordinal, self.week_end_ordinal,
-            self.quarter_ordinal, self.quarter_cardinal, self.quarter_start_ordinal, self.quarter_end_ordinal,
+            self.quarter_ordinal, self.quarter_cardinal, self.quarter_start_ordinal, self.quarter_end_ordinal,self.quarter_modifier,
             self.month_modifier,
             self.month_ordinal, self.month_cardinal, self.date_month, self.year_modifier, self.year_cardinal,
-            self.year_start_modifier,
+            self.year_start_modifier, self.year_ordinal,
             self.half_year, self.count,
             self.year_end_modifier, self.date, self.day_ordinal, self.day_cardinal, self.day_modifier, self.start_date,
             self.end_date
@@ -172,7 +172,7 @@ YEAR = and_(
     gte(1000),
     lte(2100)
 ).interpretation(
-    Date.year_cardinal.custom(int)
+    Date.year_ordinal.custom(int)
 )
 
 YEAR_SHORT = and_(
@@ -195,8 +195,9 @@ QUATER_INT = or_(
     Date.quarter_cardinal.normalized().custom(FROM_STR_TO_INT.__getitem__)
 )
 
-QUATER_ADJF = or_(
-    ADJF
+QUATER_ADJF = and_(
+    ADJF, not_(eq('последний')), not_(eq('прошлый')), not_(eq('предыдущий')), not_(eq('последний'))
+
 ).interpretation(
     Date.quarter_ordinal.normalized().custom(FROM_STR_TO_INT.__getitem__)
 )
@@ -227,6 +228,17 @@ MONTH_MODIFIER = or_(
 
 ).interpretation(
     Date.month_modifier.normalized().custom(MODIFIERS.__getitem__)
+)
+
+QUATER_MODIFIER = or_(
+    eq(normalized('прошлую')),
+    eq('прошлый'),
+    eq('предыдущий'),
+    eq('прошлого'),
+    eq('прошлое'),
+    eq('последний'),
+).interpretation(
+    Date.quarter_modifier.normalized().custom(MODIFIERS.__getitem__)
 )
 
 MONTH_NAME = dictionary(MONTHS).interpretation(
@@ -274,7 +286,10 @@ WEEK_MODIFIER = or_(
     eq('прошлую'),
     eq('прошлый'),
     eq('прошлое'),
-    eq('последний')
+    eq('последний'),
+    eq('последнюю'),
+    eq('предыдущую'),
+    eq('прошлой'),
 ).interpretation(
     Date.week_modifier.normalized().custom(MODIFIERS.__getitem__)
 )
@@ -369,6 +384,10 @@ DATE = or_(
         DAY_WORD
     ),
     rule(
+        DAY_MODIFIER,
+        DAY_WORD
+    ),
+    rule(
         ADJF_INT_NUMR.optional(),
         DAY_WORD
     ),
@@ -427,12 +446,18 @@ DATE = or_(
     ),
     rule(
 
+        QUATER_MODIFIER,
+        QUATER_WORD
+    ),
+    rule(
+
         QUATER_INT,
         QUATER_WORD
     ),
 
+
     rule(
-        or_(INT, NUMR).optional().interpretation(Date.count.custom(FROM_STR_TO_INT.__getitem__)),
+        #or_(INT, NUMR).optional().interpretation(Date.count.custom(FROM_STR_TO_INT.__getitem__)),
         QUATER_ADJF,
         QUATER_WORD
     ),
@@ -446,6 +471,14 @@ DATE = or_(
         or_(eq('полугодие'), eq('полугодия'))
 
     ),
+    rule(
+        YEAR
+    ),
+    rule(
+        INT.interpretation(Date.day_ordinal),
+        eq('.'),
+        INT.interpretation(Date.year_ordinal),
+    ),
     # rule(
     #
     #     YEAR_WORD,
@@ -454,7 +487,7 @@ DATE = or_(
     # ),
     rule(
         #YEAR_INT,
-        INT.interpretation(Date.year_cardinal.custom(int)),
+        INT.interpretation(Date.year_ordinal.custom(int)),
         YEAR_WORD
     ),
     rule(
@@ -462,6 +495,13 @@ DATE = or_(
         NUMR.interpretation(Date.year_cardinal.custom(FROM_STR_TO_INT.__getitem__)),
         YEAR_WORD
     ),
+    # rule(  # interval parse
+    #     eq('c'),
+    #     ALL_WORD.interpretation(),
+    #     eq('по'),
+    #
+    # ),
+
     # rule(
     #     #or_(INT, NUMR).optional().interpretation(Date.count.custom(FROM_STR_TO_INT.__getitem__)),
     #     YEAR,  # .optional(),

@@ -1,0 +1,36 @@
+{
+    "DateInterval": [
+        {
+            "id": 141,
+            "error": {
+                "value": "error",
+                "annotations": {
+                    "annotationStart": 22,
+                    "annotationEnd": 29
+                }
+            },
+            "day_ordinal": {
+                "value": 3,
+                "annotations": {
+                    "annotationStart": 22,
+                    "annotationEnd": 29
+                }
+            },
+            "day_cardinal": {
+                "value": 3,
+                "annotations": {
+                    "annotationStart": 22,
+                    "annotationEnd": 29
+                }
+            },
+            "error_stop": {
+                "value": "error",
+                "annotations": {
+                    "annotationStart": 26,
+                    "annotationEnd": 29
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441\u043f\u0440\u0430\u0432\u043a\u0430 \u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0430 pdf \u0442\u0440\u0438 \u0434\u043d\u044f \u043d\u0430\u0437\u0430\u0434 "
+}

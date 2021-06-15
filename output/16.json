@@ -1,0 +1,22 @@
+{
+    "DateInterval": [
+        {
+            "id": 17,
+            "week_cardinal": {
+                "value": 1,
+                "annotations": {
+                    "annotationStart": 1,
+                    "annotationEnd": 18
+                }
+            },
+            "week_modifier": {
+                "value": -1,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 18
+                }
+            }
+        }
+    ],
+    "documentText": " \u0437\u0430 \u043f\u0440\u043e\u0448\u043b\u0443\u044e \u043d\u0435\u0434\u0435\u043b\u044e "
+}

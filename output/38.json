@@ -1,0 +1,36 @@
+{
+    "DateInterval": [
+        {
+            "id": 39,
+            "error": {
+                "value": "error",
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 15
+                }
+            },
+            "day_ordinal": {
+                "value": 10,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 15
+                }
+            },
+            "day_cardinal": {
+                "value": 10,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 15
+                }
+            },
+            "error_stop": {
+                "value": "error",
+                "annotations": {
+                    "annotationStart": 11,
+                    "annotationEnd": 15
+                }
+            }
+        }
+    ],
+    "documentText": " \u0437\u0430 \u0434\u0435\u0441\u044f\u0442\u044c \u0434\u043d\u0435\u0439 "
+}

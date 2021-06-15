@@ -1,0 +1,22 @@
+{
+    "DateInterval": [
+        {
+            "id": 125,
+            "year_ordinal": {
+                "value": 2012,
+                "annotations": {
+                    "annotationStart": 3,
+                    "annotationEnd": 7
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2013,
+                "annotations": {
+                    "annotationStart": 11,
+                    "annotationEnd": 15
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441 2012 \u043f\u043e 2013 "
+}

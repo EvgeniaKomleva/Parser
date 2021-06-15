@@ -1,3 +1,5 @@
+import json
+
 from date_extractor import ExtractDate
 from parser import DATE
 from natasha import (
@@ -14,9 +16,10 @@ from yargy import (
     or_, rule
 )
 from viz import viz
-from test import make_test
+import test, test_all_date
+
 #from test_all_date import make_test
-lines = [
+lines = ['с февраля по апрель позапрошлого года' ,
 'за второй квартал предыдущего года',
 'за вторую неделю прошлого месяца',
 'за первую неделю сентября прошлого года',
@@ -43,6 +46,7 @@ lines = [
 
 
 all_tests = [
+' с 1 по 3 неделю сентября 2013 года ' ,
 ' за сегодня ' ,
 ' за вчера ' ,
 ' за позавчера ' ,
@@ -132,7 +136,7 @@ all_tests = [
 ' за август позапрошлого года ' ,
 ' за первый квартал текущего года ' ,
 ' за третий квартал позапрошлого года ' ,
-' за 2й квартал прошлого года ' ,
+' за 2 квартал прошлого года ' ,
 ' за третий квартал предыдущего года ' ,
 ' за март месяц прошедшего года ' ,
 ' за февраль прошлого года ' ,
@@ -203,6 +207,16 @@ dict_week_modifier = {}
 dict_count ={}
 dict_day_modifier = {}
 dict_half_year = {}
+dict_year_ordinal = {}
+dict_quarter_modifier = {}
+import argparse
+
+parser = argparse.ArgumentParser(description='Process some integers.')
+
+parser.add_argument('--n', default=0,
+                    help='sum the integers (default: find the max)')
+
+args = parser.parse_args()
 if __name__=="__main__":
     TOKENIZER = MorphTokenizer()
     morph_vocab = MorphVocab()
@@ -210,17 +224,27 @@ if __name__=="__main__":
     num_day_ordinal = []
     str_num = 0
     pred_day_ordinal = []
-    for line in lines:
+    n = int(args.n)
+    print("Введите ", n, " строк с датами:")
+    new_lines = []
+    for i in range(n):
+        line = input()
+        new_lines.append(line)
+
+    # new_lines - для ввода с консоли
+    for line in all_tests:
+
         print(str_num, "Исходный текст: ", line)
+        f = open(("output/{}.json").format(str_num), "w+")
+        f.seek(0)
+
         str_num = str_num + 1
         split_on_date = re.split(r'с |по | до ', line)
-        for split in split_on_date:
+        z = {}
+        for split in [line]:#split_on_date:
             date = ExtractDate()
             matches = parser.extract(split)
-            # print("______________________")
-            # print(split)
-            # try:
-            viz(str_num, date, split, matches, dict_num_day_ordinal,
+            dict_result, date_dict, result, r = viz(str_num, date, split, matches, dict_num_day_ordinal,
              dict_quarter_ordinal,
              dict_quarter_cardinal,
              dict_year_modifier,
@@ -232,11 +256,35 @@ if __name__=="__main__":
              dict_day_cardinal,
              dict_month_ordinal,
              dict_month_cardinal,
-             dict_week_modifier, dict_count, dict_day_modifier, dict_half_year)
-            # except:
-            #  print("Can't parse")
+             dict_week_modifier, dict_count, dict_day_modifier, dict_half_year, dict_year_ordinal,
+             dict_quarter_modifier)
+            #print("DICT R", dict_result)
+            #try:
+            z = z.copy()
+            z.update(dict_result)
+
+        #print("QQQQQQ", dict_quarter_modifier)
+        # Remove duplicate values in dictionary
+        # Using loop
+        temp = []
+        res = dict()
+        for key, val in dict_result.items():
+            if val not in temp:
+                temp.append(val)
+                res[key] = val
+        temp = []
+        res_date = dict()
+        for key, val in r.items():
+            if val not in temp:
+                temp.append(val)
+                res_date[key] = val
+        f.write(json.dumps(res_date,  indent=4))
+        f.write('\n')
+        print("RESULT", r)
+        print("DATE", res_date)
         print("========================")
-    make_test( dict_num_day_ordinal,
+        f.close()
+    test_all_date.make_test( dict_num_day_ordinal,
              dict_quarter_ordinal,
              dict_quarter_cardinal,
              dict_year_modifier,
@@ -246,6 +294,11 @@ if __name__=="__main__":
              dict_month_modifier,
              #dict_date,
              dict_day_cardinal,
+             dict_day_modifier,
              dict_month_ordinal,
              dict_month_cardinal,
-             dict_week_modifier)
+             dict_week_modifier,
+                             dict_year_ordinal,
+                             dict_quarter_modifier
+                             )
+

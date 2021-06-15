@@ -1,0 +1,29 @@
+{
+    "DateInterval": [
+        {
+            "id": 100,
+            "quarter_cardinal": {
+                "value": 4,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 13
+                }
+            },
+            "year_ordinal": {
+                "value": 2020,
+                "annotations": {
+                    "annotationStart": 14,
+                    "annotationEnd": 18
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2020,
+                "annotations": {
+                    "annotationStart": 14,
+                    "annotationEnd": 23
+                }
+            }
+        }
+    ],
+    "documentText": " \u0437\u0430 4 \u043a\u0432\u0430\u0440\u0442\u0430\u043b 2020 \u0433\u043e\u0434\u0430 "
+}

@@ -38,6 +38,8 @@ class ExtractDate(object):
 
         self.start_date = []
         self.end_date = []
+        self.year_ordinal = []
+        self.quarter_modifier = []
 
     def get_date(self):
         if self.year != None:

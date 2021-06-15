@@ -1,0 +1,43 @@
+{
+    "DateInterval": [
+        {
+            "id": 99,
+            "day_ordinal": {
+                "value": 2,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 15
+                }
+            },
+            "day_cardinal": {
+                "value": 2,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 15
+                }
+            },
+            "error": {
+                "value": "error",
+                "annotations": {
+                    "annotationStart": 11,
+                    "annotationEnd": 15
+                }
+            },
+            "week_ordinal": {
+                "value": 3,
+                "annotations": {
+                    "annotationStart": 16,
+                    "annotationEnd": 30
+                }
+            },
+            "quarter_ordinal": {
+                "value": 2,
+                "annotations": {
+                    "annotationStart": 31,
+                    "annotationEnd": 47
+                }
+            }
+        }
+    ],
+    "documentText": " \u0437\u0430 \u0432\u0442\u043e\u0440\u043e\u0439 \u0434\u0435\u043d\u044c \u0442\u0440\u0435\u0442\u044c\u0435\u0439 \u043d\u0435\u0434\u0435\u043b\u0438 \u0432\u0442\u043e\u0440\u043e\u0433\u043e \u043a\u0432\u0430\u0440\u0442\u0430\u043b\u0430 "
+}

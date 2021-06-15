@@ -1,0 +1,36 @@
+{
+    "DateInterval": [
+        {
+            "id": 129,
+            "month_ordinal": {
+                "value": 10,
+                "annotations": {
+                    "annotationStart": 11,
+                    "annotationEnd": 18
+                }
+            },
+            "month_ordinal_stop": {
+                "value": 12,
+                "annotations": {
+                    "annotationStart": 29,
+                    "annotationEnd": 36
+                }
+            },
+            "year_ordinal": {
+                "value": 2012,
+                "annotations": {
+                    "annotationStart": 37,
+                    "annotationEnd": 41
+                }
+            },
+            "year_ordinal_stop": {
+                "value": 2012,
+                "annotations": {
+                    "annotationStart": 37,
+                    "annotationEnd": 46
+                }
+            }
+        }
+    ],
+    "documentText": " \u0441 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043e\u043a\u0442\u044f\u0431\u0440\u044f \u043f\u043e \u043f\u0435\u0440\u0432\u043e\u0435 \u0434\u0435\u043a\u0430\u0431\u0440\u044f 2012 \u0433\u043e\u0434\u0430 "
+}

@@ -1,6 +1,9 @@
+import json
+import re
 
+import pymorphy2
+morph = pymorphy2.MorphAnalyzer()
 
-# dict_ = {}
 # dict_ = {}
 def skip_none(arr):
   #print("arr", arr)
@@ -24,8 +27,90 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
         dict_day_cardinal,
         dict_month_ordinal,
         dict_month_cardinal,
-        dict_week_modifier, dict_count, dict_day_modifier, dict_half_year):
+        dict_week_modifier, dict_count, dict_day_modifier, dict_half_year,dict_year_ordinal,
+             dict_quarter_modifier):
+    #print(len(matches))
+    dict_result = {}
+    dict_num = 0
+    date_d = {}
+    result = {}
+    split_index = []
+    for m in re.finditer(r'с |по |до |за |по |в |после ', line):
+        index = m.start()
+        split_index.append(index)
+        #split_on_date = re.split(r'с |по | до ', line)
+    split_index.append(len(line))
+    print("INTERVALS ", split_index)
+    num_split = 0
+    for split_loc in split_index:
+        num_split = num_split + 1
+    result["id"] = str_num
+    r = {}
     for match in matches:
+
+        #if match.span.start<:
+        dict_num = dict_num + 1
+        dict_match = {}
+        val = []
+        dict_match["start"] = match.span.start
+        dict_match["stop"] = match.span.stop
+        dict_match["word"] = match.tree.root.main.value
+        before = morph.parse(match.tokens[0].value)[0]
+        p = morph.parse(match.tokens[0].normalized)[0]
+        try:
+            dict_match["entity"] = list(match.fact.as_json.items()).pop()[0]
+            dict_match["value"] = list(match.fact.as_json.items()).pop()[1]
+            #print(isinstance(dict_match["value"], int))
+
+                #print("DAAAAAte")
+            if (re.search("ordinal", dict_match["entity"])) and (p.tag.POS == 'NUMR') and (before.tag.POS == "ADJF") :
+                dict_match["entity_cardinal"] = dict_match["entity"].replace("ordinal", "cardinal")
+
+                dict_match["value_cardinal"] = 1
+            if (re.search("ordinal", dict_match["entity"])):
+                if (re.search("year", dict_match["entity"])):
+                    date_d["year{}".format(dict_num)] = dict_match["value"]
+                if (re.search("month", dict_match["entity"])):
+                    date_d["month{}".format(dict_num)] = dict_match["value"]
+        #print("DATE",date)
+        #dict_match["date"] = date
+        except:
+
+            dict_match["entity"] = "error"
+            dict_match["value"] = "error"
+
+
+        dict_result[dict_num] = dict_match
+
+        #dict_match["annotions"] = {dict_match["start"], dict_match["stop"] }
+        #result[dict_match["entity"]] = [dict_match["value"], dict_match["annotions"]]
+        #if (p.tag.POS == NUMR):
+        result_atr = {
+
+            "value":dict_match["value"],
+            "annotations":{
+                "annotationStart":dict_match["start"],
+                "annotationEnd":dict_match["stop"]
+            }
+        }
+        res_atr = []
+        if (dict_match["entity"]) in result:
+            if result[(dict_match["entity"] )] != result_atr:
+                result[(dict_match["entity"])+"_stop"] = result_atr
+
+        else:
+            result[(dict_match["entity"])] = result_atr
+
+        r = {
+            "DateInterval": [result],
+            "documentText": line
+        }
+        #print(r)
+        #print("TAAAAARG", p.tag.POS)
+        #dict_result.update(dict_match)
+        #print(dict_date1)
+        #print(match.tree)
+        #json_d.value.append(match.tokens[0].value)
         date.day_modifier.append(match.fact.day_modifier)
         date.half_year.append(match.fact.half_year)
         date.quarter_cardinal.append(match.fact.quarter_cardinal)
@@ -46,7 +131,16 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
         date.half_year.append(match.fact.half_year)
         date.count.append(match.fact.count)
         date.date.append(match.fact.date)
+        date.year_ordinal.append(match.fact.date)
+        date.quarter_modifier.append(match.fact.date)
         # date.day.append(match.fact.day)
+    if len(str(skip_none(date.quarter_modifier))) > 0:
+        print("quarter_modifier: ", skip_none(date.quarter_modifier))
+        dict_quarter_modifier["{}".format(line)] = skip_none(date.quarter_modifier)
+    if len(str(skip_none(date.year_ordinal))) > 0:
+        print("year_ordinal: ", skip_none(date.year_ordinal))
+        dict_year_ordinal["{}".format(line)] = skip_none(date.year_ordinal)
+
     if len(str(skip_none(date.quarter_cardinal))) > 0:
         print("quarter_cardinal: ", skip_none(date.quarter_cardinal))
         dict_quarter_cardinal["{}".format(line)] = skip_none(date.quarter_cardinal)
@@ -102,3 +196,4 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
     if len(str(skip_none(date.count))) > 0:
         print("count: ", skip_none(date.count))
         dict_count["{}".format(line)] = skip_none(date.count)
+    return dict_result, date, result, r

@@ -1,0 +1,29 @@
+{
+    "DateInterval": [
+        {
+            "id": 37,
+            "day_ordinal": {
+                "value": 1,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 13
+                }
+            },
+            "day_cardinal": {
+                "value": 1,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 13
+                }
+            },
+            "error": {
+                "value": "error",
+                "annotations": {
+                    "annotationStart": 9,
+                    "annotationEnd": 13
+                }
+            }
+        }
+    ],
+    "documentText": " \u0437\u0430 \u043e\u0434\u0438\u043d \u0434\u0435\u043d\u044c "
+}

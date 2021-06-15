@@ -1,0 +1,15 @@
+{
+    "DateInterval": [
+        {
+            "id": 143,
+            "quarter_modifier": {
+                "value": -1,
+                "annotations": {
+                    "annotationStart": 36,
+                    "annotationEnd": 51
+                }
+            }
+        }
+    ],
+    "documentText": " \u043a\u0432\u0430\u0440\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u043e\u0442\u0447\u0435\u0442 \u0421\u0432\u0435\u0442\u043b\u0430\u043d\u044b docx \u0437\u0430 \u043f\u0440\u043e\u0448\u043b\u044b\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b "
+}
