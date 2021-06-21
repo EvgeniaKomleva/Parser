@@ -1,0 +1,38 @@
+{
+    "DateIntervals": {
+        "id": 128,
+        "day_ordinal": {
+            "value": "01",
+            "annotations": {
+                "annotationStart": 3,
+                "annotationEnd": 8
+            },
+            "id_interval": 0
+        },
+        "year_ordinal": {
+            "value": "02",
+            "annotations": {
+                "annotationStart": 3,
+                "annotationEnd": 8
+            },
+            "id_interval": 0
+        },
+        "day_ordinal_stop": {
+            "value": "21",
+            "annotations": {
+                "annotationStart": 12,
+                "annotationEnd": 17
+            },
+            "id_interval": 1
+        },
+        "year_ordinal_stop": {
+            "value": "12",
+            "annotations": {
+                "annotationStart": 3,
+                "annotationEnd": 8
+            },
+            "id_interval": 0
+        }
+    },
+    "documentText": " с 01.02 по 21.12 "
+}

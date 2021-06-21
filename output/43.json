@@ -1,15 +1,1 @@
-{
-    "DateInterval": [
-        {
-            "id": 44,
-            "week_ordinal": {
-                "value": 1,
-                "annotations": {
-                    "annotationStart": 1,
-                    "annotationEnd": 10
-                }
-            }
-        }
-    ],
-    "documentText": " \u0437\u0430 \u043d\u0435\u0434\u0435\u043b\u044e "
-}
+{}

@@ -1,0 +1,30 @@
+{
+    "DateIntervals": {
+        "id": 134,
+        "quarter_ordinal": {
+            "value": 1,
+            "annotations": {
+                "annotationStart": 8,
+                "annotationEnd": 16
+            },
+            "id_interval": 1
+        },
+        "quarter_ordinal_stop": {
+            "value": 3,
+            "annotations": {
+                "annotationStart": 14,
+                "annotationEnd": 28
+            },
+            "id_interval": 1
+        },
+        "year_modifier": {
+            "value": -1,
+            "annotations": {
+                "annotationStart": 29,
+                "annotationEnd": 42
+            },
+            "id_interval": 1
+        }
+    },
+    "documentText": " с первого по третий квартал прошлого года "
+}

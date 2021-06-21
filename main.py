@@ -46,7 +46,7 @@ lines = ['с февраля по апрель позапрошлого года'
 
 
 all_tests = [
-' с 1 по 3 неделю сентября 2013 года ' ,
+' со второго квартала 2019 по третий квартал 2020 ' ,
 ' за сегодня ' ,
 ' за вчера ' ,
 ' за позавчера ' ,
@@ -262,7 +262,7 @@ if __name__=="__main__":
             #try:
             z = z.copy()
             z.update(dict_result)
-
+        #if result["id_interval"]
         #print("QQQQQQ", dict_quarter_modifier)
         # Remove duplicate values in dictionary
         # Using loop
@@ -278,9 +278,14 @@ if __name__=="__main__":
             if val not in temp:
                 temp.append(val)
                 res_date[key] = val
-        f.write(json.dumps(res_date,  indent=4))
+        f.write(json.dumps(res_date,  indent=4, ensure_ascii=False))
         f.write('\n')
         print("RESULT", r)
+        final = {}
+        #print(r["DateIntervals"].popitem())
+        #for ent in r["DateIntervals"]:
+            #print(r.keys()[-1] )
+        #    print(r["DateIntervals"].popitem())
         print("DATE", res_date)
         print("========================")
         f.close()
@@ -298,7 +303,6 @@ if __name__=="__main__":
              dict_month_ordinal,
              dict_month_cardinal,
              dict_week_modifier,
-                             dict_year_ordinal,
-                             dict_quarter_modifier
-                             )
+             dict_year_ordinal,
+             dict_quarter_modifier)
 

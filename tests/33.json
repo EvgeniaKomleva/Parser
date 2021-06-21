@@ -1,0 +1,22 @@
+{
+    "DateIntervals": {
+        "id": 34,
+        "month_modifier": {
+            "value": -1,
+            "annotations": {
+                "annotationStart": 8,
+                "annotationEnd": 25
+            },
+            "id_interval": 0
+        },
+        "month_cardinal": {
+            "value": 3,
+            "annotations": {
+                "annotationStart": 8,
+                "annotationEnd": 25
+            },
+            "id_interval": 0
+        }
+    },
+    "documentText": " за три предыдущих месяца "
+}

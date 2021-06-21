@@ -1,0 +1,22 @@
+{
+    "DateIntervals": {
+        "id": 25,
+        "year_modifier": {
+            "value": -1,
+            "annotations": {
+                "annotationStart": 11,
+                "annotationEnd": 23
+            },
+            "id_interval": 0
+        },
+        "year_cardinal": {
+            "value": 4,
+            "annotations": {
+                "annotationStart": 4,
+                "annotationEnd": 23
+            },
+            "id_interval": 0
+        }
+    },
+    "documentText": " за четыре прошлых года "
+}

@@ -1,0 +1,22 @@
+{
+    "DateIntervals": {
+        "id": 22,
+        "day_cardinal": {
+            "value": 2,
+            "annotations": {
+                "annotationStart": 4,
+                "annotationEnd": 19
+            },
+            "id_interval": 0
+        },
+        "day_modifier": {
+            "value": -1,
+            "annotations": {
+                "annotationStart": 8,
+                "annotationEnd": 19
+            },
+            "id_interval": 0
+        }
+    },
+    "documentText": " за два прошлых дня "
+}

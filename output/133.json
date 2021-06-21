@@ -1,22 +1,22 @@
 {
-    "DateInterval": [
-        {
-            "id": 134,
-            "quarter_ordinal": {
-                "value": 3,
-                "annotations": {
-                    "annotationStart": 14,
-                    "annotationEnd": 28
-                }
+    "DateIntervals": {
+        "id": 134,
+        "quarter_ordinal": {
+            "value": 3,
+            "annotations": {
+                "annotationStart": 14,
+                "annotationEnd": 28
             },
-            "year_modifier": {
-                "value": -1,
-                "annotations": {
-                    "annotationStart": 29,
-                    "annotationEnd": 42
-                }
-            }
+            "id_interval": 1
+        },
+        "year_modifier": {
+            "value": -1,
+            "annotations": {
+                "annotationStart": 29,
+                "annotationEnd": 42
+            },
+            "id_interval": 1
         }
-    ],
-    "documentText": " \u0441 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u043f\u043e \u0442\u0440\u0435\u0442\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b \u043f\u0440\u043e\u0448\u043b\u043e\u0433\u043e \u0433\u043e\u0434\u0430 "
+    },
+    "documentText": " с первого по третий квартал прошлого года "
 }
