@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 124,
-        "year_ordinal": {
-            "value": 2012,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 7
-            },
-            "id_interval": 0
-        },
-        "year_ordinal_stop": {
-            "value": 2013,
-            "annotations": {
-                "annotationStart": 8,
-                "annotationEnd": 12
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "129",
+            "month_cardinal": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 17,
+                        "annotationText": " прошлом месяце"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " в 2012-2013 гг "
+    ],
+    "Author": [],
+    "documentText": " в прошлом месяце "
 }

@@ -1,22 +1,49 @@
 {
-    "DateIntervals": {
-        "id": 131,
-        "half_year": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 20
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 21,
-                "annotationEnd": 34
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "136",
+            "day_start_ordinal": [
+                {
+                    "value": "01",
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 5,
+                        "annotationText": "01"
+                    }
+                }
+            ],
+            "day_end_ordinal": [
+                {
+                    "value": "01",
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 5,
+                        "annotationText": "01"
+                    }
+                }
+            ],
+            "month_start_ordinal": [
+                {
+                    "value": "10",
+                    "annotations": {
+                        "annotationStart": 6,
+                        "annotationEnd": 8,
+                        "annotationText": "10"
+                    }
+                }
+            ],
+            "month_end_ordinal": [
+                {
+                    "value": "12",
+                    "annotations": {
+                        "annotationStart": 15,
+                        "annotationEnd": 17,
+                        "annotationText": "12"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с первого полугодия прошлого года "
+    ],
+    "documentText": " c 01.10 по 01.12 ",
+    "Author": []
 }

@@ -1,14 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 37,
-        "day_cardinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "42",
+            "day_ordinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 22,
+                        "annotationText": " два предыдущих дня"
+                    }
+                }
+            ],
+            "day_cardinal": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 8,
+                        "annotationEnd": 22,
+                        "annotationText": " предыдущих дня"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за один день "
+    ],
+    "Author": [],
+    "documentText": " за два предыдущих дня "
 }

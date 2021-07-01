@@ -1,14 +1,35 @@
 {
-    "DateIntervals": {
-        "id": 138,
-        "week_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 29,
-                "annotationEnd": 43
+    "DateInterval": [
+        {
+            "id": "143",
+            "quarter_ordinal": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 31,
+                        "annotationEnd": 47,
+                        "annotationText": " первого квартала"
+                    }
+                }
+            ],
+            "week_end_cardinal": {
+                "value": 4,
+                "annotations": {
+                    "annotationStart": 14,
+                    "annotationEnd": 23,
+                    "annotationText": "четвертую"
+                }
             },
-            "id_interval": 0
+            "week_start_cardinal": {
+                "value": 2,
+                "annotations": {
+                    "annotationStart": 4,
+                    "annotationEnd": 10,
+                    "annotationText": "второй"
+                }
+            }
         }
-    },
-    "documentText": " отчет Павлова на портале за прошлую неделю "
+    ],
+    "Author": [],
+    "documentText": " со второй по четвертую неделю первого квартала "
 }

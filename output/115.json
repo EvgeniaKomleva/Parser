@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 116,
-        "month_ordinal": {
-            "value": 4,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 9
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 10,
-                "annotationEnd": 23
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "121",
+            "year_end_ordinal": [
+                {
+                    "value": 2012,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 15,
+                        "annotationText": " 2012"
+                    }
+                }
+            ],
+            "year_start_ordinal": [
+                {
+                    "value": 2001,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 7,
+                        "annotationText": " 2001"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " в апреле прошлого года "
+    ],
+    "Author": [],
+    "documentText": " с 2001 по 2012 гг "
 }

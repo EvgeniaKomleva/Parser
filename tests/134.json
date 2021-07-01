@@ -1,38 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 135,
-        "week_cardinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 8,
-                "annotationEnd": 16
-            },
-            "id_interval": 1
-        },
-        "week_cardinal_stop": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 8,
-                "annotationEnd": 16
-            },
-            "id_interval": 1
-        },
-        "month_ordinal": {
-            "value": 9,
-            "annotations": {
-                "annotationStart": 17,
-                "annotationEnd": 25
-            },
-            "id_interval": 1
-        },
-        "year_ordinal": {
-            "value": 2013,
-            "annotations": {
-                "annotationStart": 26,
-                "annotationEnd": 30
-            },
-            "id_interval": 1
+    "DateInterval": [
+        {
+            "id": "140",
+            "day_ordinal": [
+                {
+                    "value": 22,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 18,
+                        "annotationText": " октября"
+                    }
+                }
+            ],
+            "month_ordinal": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 26,
+                        "annotationEnd": 32,
+                        "annotationText": " апреля"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с 1 по 3 неделю сентября 2013 года "
+    ],
+    "Author": [],
+    "documentText": " с двадцать второго числа апреля месяца "
 }

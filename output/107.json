@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 108,
-        "month_ordinal": {
-            "value": 6,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": 0,
-            "annotations": {
-                "annotationStart": 9,
-                "annotationEnd": 22
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "113",
+            "month_ordinal": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 9,
+                        "annotationText": " апреля"
+                    }
+                }
+            ],
+            "year_ordinal": [
+                {
+                    "value": 2010,
+                    "annotations": {
+                        "annotationStart": 10,
+                        "annotationEnd": 14,
+                        "annotationText": " 2010"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " до июня текущего года "
+    ],
+    "Author": [],
+    "documentText": " с апреля 2010 года "
 }

@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 128,
-        "day_ordinal": {
-            "value": "01",
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
-        },
-        "day_ordinal_stop": {
-            "value": "21",
-            "annotations": {
-                "annotationStart": 12,
-                "annotationEnd": 17
-            },
-            "id_interval": 1
+    "DateInterval": [
+        {
+            "id": "133",
+            "year_end_ordinal": [
+                {
+                    "value": 2010,
+                    "annotations": {
+                        "annotationStart": 8,
+                        "annotationEnd": 12,
+                        "annotationText": " 2010"
+                    }
+                }
+            ],
+            "year_start_ordinal": [
+                {
+                    "value": 2005,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 7,
+                        "annotationText": " 2005"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с 01.02 по 21.12 "
+    ],
+    "Author": [],
+    "documentText": " в 2005-2010 годах "
 }

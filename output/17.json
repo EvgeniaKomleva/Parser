@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 18,
-        "month_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 17
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "23",
+            "month_cardinal": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 14,
+                        "annotationEnd": 27,
+                        "annotationText": " четыре месяца"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за прошлый месяц "
+    ],
+    "Author": [],
+    "documentText": " за последние четыре месяца "
 }

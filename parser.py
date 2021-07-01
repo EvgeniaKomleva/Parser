@@ -242,8 +242,6 @@ MONTH_MODIFIER = or_(
     eq('прошлое'),
     eq('последний'),
 
-).interpretation(
-    Date.month_modifier.normalized().custom(MODIFIERS.__getitem__)
 )
 
 QUATER_MODIFIER = or_(
@@ -346,6 +344,16 @@ DAY_STR = not_(
 ).interpretation(
     Date.day_cardinal.normalized().custom(FROM_STR_TO_INT.__getitem__)
 )
+
+YEAR_MOD = or_(
+        eq(normalized('прошлую')),
+        eq('прошлый'),
+        eq('предыдущих'),
+        eq('предыдущий'),
+        eq('прошлого'),
+        eq('прошлое'),
+        eq('последний'), eq('прошлых'))
+
 DAY_INT = or_(
     NUMR
 ).interpretation(
@@ -401,6 +409,11 @@ DATE = or_(
         DAY_WORD
     ),
     rule(
+        or_(INT,NUMR).interpretation(Date.day_cardinal),
+        DAY_MODIFIER,
+        DAY_WORD
+    ),
+    rule(
         DAY_MODIFIER,
         DAY_WORD
     ),
@@ -420,6 +433,23 @@ DATE = or_(
     rule(
         or_(INT, NUMR).optional().interpretation(Date.day_ordinal.custom(FROM_STR_TO_INT.__getitem__)),
         DAY_STR,
+        DAY_WORD
+    ),
+    rule(
+        or_(INT, NUMR).interpretation(Date.year_ordinal.custom(FROM_STR_TO_INT.__getitem__)),
+        YEAR_MOD,
+        YEAR_WORD,
+
+    ),
+    rule(
+        or_(INT, NUMR).interpretation(Date.month_ordinal.custom(FROM_STR_TO_INT.__getitem__)),
+        YEAR_MOD,
+        MONTH_WORD,
+
+    ),
+    rule(
+        or_(INT, NUMR).optional().interpretation(Date.day_cardinal.custom(FROM_STR_TO_INT.__getitem__)),
+        DAY_MODIFIER,
         DAY_WORD
     ),
     rule(
@@ -481,12 +511,21 @@ DATE = or_(
         WEEK_WORD
     ),
     rule(
+        eq('за').interpretation(Date.week_cardinal.custom(normalize_float)),
+        WEEK_WORD
+    ),
+    rule(
         or_(INT, NUMR).optional().interpretation(Date.week_cardinal.custom(FROM_STR_TO_INT.__getitem__)),
         WEEK_WORD
     ),
     rule(
-        #or_(INT, NUMR).optional().interpretation(Date.count.custom(FROM_STR_TO_INT.__getitem__)),
+        or_(INT, NUMR).optional().interpretation(Date.month_ordinal.custom(FROM_STR_TO_INT.__getitem__)),
         MONTH_MODIFIER,
+        MONTH_WORD
+    ),
+    rule(
+        not_(or_(INT, NUMR)),
+        or_(eq('последний'), eq('прошлый'), eq('предыдущий')).interpretation(Date.month_cardinal.custom(FROM_STR_TO_INT.__getitem__)),
         MONTH_WORD
     ),
     rule(
@@ -549,6 +588,11 @@ DATE = or_(
 
     ),
     rule(
+        eq("полгода").interpretation(Date.half_year.normalized().custom(normalize_float)),
+        eq('назад')
+
+    ),
+    rule(
         YEAR
     ),
     rule(
@@ -561,10 +605,18 @@ DATE = or_(
         and_(or_(INT, NUMR), not_(and_(gte(1000),lte(2100)))).interpretation(Date.year_cardinal.custom(FROM_STR_TO_INT.__getitem__)),
         YEAR_WORD
     ),
+    # rule(
+    #     INT.interpretation(Date.day_ordinal),
+    #     eq('.'),
+    #     INT.interpretation(Date.year_ordinal),
+    #     not_(eq('.'))
+    # ),
     rule(
         INT.interpretation(Date.day_ordinal),
         eq('.'),
-        INT.interpretation(Date.year_ordinal),
+        INT.interpretation(Date.month_ordinal),
+        eq('.').optional(),
+        INT.optional().interpretation(Date.year_ordinal),
     ),
     rule(
 

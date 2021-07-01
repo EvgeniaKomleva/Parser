@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 73,
-        "day_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 1,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "78",
+            "year_modifier": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 12,
+                        "annotationText": " один год"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " три дня назад "
+    ],
+    "Author": [],
+    "documentText": " за один год "
 }

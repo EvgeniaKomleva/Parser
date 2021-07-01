@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 57,
-        "month_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 12
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "62",
+            "month_cardinal": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 14,
+                        "annotationText": " один месяц"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за 3 месяца "
+    ],
+    "Author": [],
+    "documentText": " за один месяц "
 }

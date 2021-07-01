@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 15,
-        "year_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 14,
-                "annotationEnd": 22
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "20",
+            "year_modifier": [
+                {
+                    "value": -0.5,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 17,
+                        "annotationText": " последний год"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за последние три года "
+    ],
+    "Author": [],
+    "documentText": " за последний год "
 }

@@ -1,46 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 129,
-        "day_ordinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 26,
-                "annotationEnd": 32
-            },
-            "id_interval": 0
-        },
-        "day_ordinal_stop": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 26,
-                "annotationEnd": 32
-            },
-            "id_interval": 0
-        },
-        "month_ordinal": {
-            "value": 10,
-            "annotations": {
-                "annotationStart": 11,
-                "annotationEnd": 18
-            },
-            "id_interval": 0
-        },
-        "month_ordinal_stop": {
-            "value": 12,
-            "annotations": {
-                "annotationStart": 29,
-                "annotationEnd": 36
-            },
-            "id_interval": 1
-        },
-        "year_ordinal": {
-            "value": 2012,
-            "annotations": {
-                "annotationStart": 37,
-                "annotationEnd": 41
-            },
-            "id_interval": 1
+    "DateInterval": [
+        {
+            "id": "134",
+            "year_end_ordinal": [
+                {
+                    "value": 2013,
+                    "annotations": {
+                        "annotationStart": 8,
+                        "annotationEnd": 12,
+                        "annotationText": " 2013"
+                    }
+                }
+            ],
+            "year_start_ordinal": [
+                {
+                    "value": 2012,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 7,
+                        "annotationText": " 2012"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с первого октября по первое декабря 2012 года "
+    ],
+    "Author": [],
+    "documentText": " в 2012-2013 гг "
 }

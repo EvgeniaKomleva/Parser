@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 20,
-        "half_year": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 21
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "25",
+            "year_cardinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 14,
+                        "annotationEnd": 22,
+                        "annotationText": " три года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за прошлое полугодие "
+    ],
+    "Author": [],
+    "documentText": " за последние три года "
 }

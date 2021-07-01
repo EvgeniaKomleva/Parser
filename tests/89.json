@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 90,
-        "quarter_ordinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 18
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -2,
-            "annotations": {
-                "annotationStart": 19,
-                "annotationEnd": 36
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "95",
+            "year_ordinal": [
+                {
+                    "value": 2021,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 8,
+                        "annotationText": " 2021"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за третий квартал позапрошлого года "
+    ],
+    "Author": [],
+    "documentText": " за 2021 "
 }

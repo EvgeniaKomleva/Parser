@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 28,
-        "month_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 20
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "33",
+            "week_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 22,
+                        "annotationText": " две прошлых недели"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за предыдущий месяц "
+    ],
+    "Author": [],
+    "documentText": " за две прошлых недели "
 }

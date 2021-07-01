@@ -1,30 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 97,
-        "week_cardinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 17
-            },
-            "id_interval": 0
-        },
-        "month_ordinal": {
-            "value": 9,
-            "annotations": {
-                "annotationStart": 18,
-                "annotationEnd": 26
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 27,
-                "annotationEnd": 40
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "102",
+            "quarter_ordinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 18,
+                        "annotationText": " третий квартал"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 19,
+                        "annotationEnd": 35,
+                        "annotationText": " предыдущего года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за первую неделю сентября прошлого года "
+    ],
+    "Author": [],
+    "documentText": " за третий квартал предыдущего года "
 }

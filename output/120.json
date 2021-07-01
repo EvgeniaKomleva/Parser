@@ -1,14 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 121,
-        "year_modifier": {
-            "value": -2,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 19
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "126",
+            "month_ordinal": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 9,
+                        "annotationText": " апреле"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 10,
+                        "annotationEnd": 23,
+                        "annotationText": " прошлого года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " в позапрошлом году "
+    ],
+    "Author": [],
+    "documentText": " в апреле прошлого года "
 }

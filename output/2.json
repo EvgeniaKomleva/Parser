@@ -1,14 +1,18 @@
 {
-    "DateIntervals": {
-        "id": 3,
-        "day_ordinal": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 9
-            },
-            "id_interval": 0
+    "Author": [
+        {
+            "id": "7",
+            "surname": [
+                {
+                    "value": "павлов",
+                    "annotations": {
+                        "annotationStart": 7,
+                        "annotationEnd": 14,
+                        "annotationText": "Павлова"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за вчера "
+    ],
+    "documentText": "приказ Павлова"
 }

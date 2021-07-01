@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 69,
-        "year_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 12
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "74",
+            "half_year": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 1,
+                        "annotationEnd": 13,
+                        "annotationText": " за полугодие"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за три года "
+    ],
+    "Author": [],
+    "documentText": " за полугодие "
 }

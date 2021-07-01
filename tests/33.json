@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 34,
-        "month_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 8,
-                "annotationEnd": 25
-            },
-            "id_interval": 0
-        },
-        "month_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 8,
-                "annotationEnd": 25
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "39",
+            "quarter_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 22,
+                        "annotationText": " предыдущий квартал"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за три предыдущих месяца "
+    ],
+    "Author": [],
+    "documentText": " за предыдущий квартал "
 }

@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 96,
-        "week_cardinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 12
-            },
-            "id_interval": 0
-        },
-        "month_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 13,
-                "annotationEnd": 28
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "101",
+            "quarter_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 13,
+                        "annotationText": " 2 квартал"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 14,
+                        "annotationEnd": 27,
+                        "annotationText": " прошлого года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за 2 неделю прошлого месяца "
+    ],
+    "Author": [],
+    "documentText": " за 2 квартал прошлого года "
 }

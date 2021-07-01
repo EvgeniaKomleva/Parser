@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 25,
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 11,
-                "annotationEnd": 23
-            },
-            "id_interval": 0
-        },
-        "year_cardinal": {
-            "value": 4,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 23
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "30",
+            "half_year": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 21,
+                        "annotationText": " прошлое полугодие"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за четыре прошлых года "
+    ],
+    "Author": [],
+    "documentText": " за прошлое полугодие "
 }

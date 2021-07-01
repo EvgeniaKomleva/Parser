@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 19,
-        "quarter_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 19
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "24",
+            "quarter_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 14,
+                        "annotationEnd": 25,
+                        "annotationText": " два квартал"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за прошлый квартал "
+    ],
+    "Author": [],
+    "documentText": " за последние два квартал "
 }

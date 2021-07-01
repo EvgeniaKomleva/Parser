@@ -1,14 +1,17 @@
 {
-    "DateIntervals": {
-        "id": 4,
-        "day_ordinal": {
-            "value": -2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
+    "Author": [
+        {
+            "surname": [
+                {
+                    "value": "@Me",
+                    "annotations": {
+                        "annotationStart": 0,
+                        "annotationEnd": 4,
+                        "annotationText": "мои "
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за позавчера "
+    ],
+    "documentText": "мои отчеты c портала"
 }

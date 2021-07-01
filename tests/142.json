@@ -1,14 +1,33 @@
 {
-    "DateIntervals": {
-        "id": 143,
-        "quarter_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 36,
-                "annotationEnd": 51
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "148",
+            "week_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 29,
+                        "annotationEnd": 43,
+                        "annotationText": " прошлую неделю"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " квартальный отчет Светланы docx за прошлый квартал "
+    ],
+    "Author": [
+        {
+            "id": "149",
+            "surname": [
+                {
+                    "value": "павлов",
+                    "annotations": {
+                        "annotationStart": 7,
+                        "annotationEnd": 14,
+                        "annotationText": "Павлова"
+                    }
+                }
+            ]
+        }
+    ],
+    "documentText": " отчет Павлова на портале за прошлую неделю "
 }

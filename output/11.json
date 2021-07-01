@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 12,
-        "week_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 14,
-                "annotationEnd": 24
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "17",
+            "month_cardinal": [
+                {
+                    "value": -0.5,
+                    "annotations": {
+                        "annotationStart": 1,
+                        "annotationEnd": 19,
+                        "annotationText": " за последний месяц"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за последние три недели "
+    ],
+    "Author": [],
+    "documentText": " за последний месяц "
 }

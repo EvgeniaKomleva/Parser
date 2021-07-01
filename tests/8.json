@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 9,
-        "half_year": {
-            "value": -0.5,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 23
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "14",
+            "day_ordinal": [
+                {
+                    "value": -2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 13,
+                        "annotationText": " позавчера"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за последнее полугодие "
+    ],
+    "Author": [],
+    "documentText": " за позавчера "
 }

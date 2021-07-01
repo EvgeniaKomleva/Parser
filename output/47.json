@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 48,
-        "week_cardinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 12
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "53",
+            "day_cardinal": [
+                {
+                    "value": 10,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 11,
+                        "annotationText": " 10 дней"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за 1 неделю "
+    ],
+    "Author": [],
+    "documentText": " за 10 дней "
 }

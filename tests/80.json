@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 81,
-        "month_ordinal": {
-            "value": 4,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 10
-            },
-            "id_interval": 0
-        },
-        "year_ordinal": {
-            "value": 2008,
-            "annotations": {
-                "annotationStart": 11,
-                "annotationEnd": 15
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "86",
+            "half_year": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 1,
+                        "annotationEnd": 14,
+                        "annotationText": " полгода назад"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за апрель 2008 "
+    ],
+    "Author": [],
+    "documentText": " полгода назад "
 }

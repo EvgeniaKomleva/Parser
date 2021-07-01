@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 79,
-        "month_ordinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 10
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "84",
+            "week_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 1,
+                        "annotationEnd": 11,
+                        "annotationText": " две недели"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за январь "
+    ],
+    "Author": [],
+    "documentText": " две недели назад "
 }

@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 87,
-        "month_ordinal": {
-            "value": 6,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 9,
-                "annotationEnd": 22
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "92",
+            "month_ordinal": [
+                {
+                    "value": 8,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 10,
+                        "annotationText": " август"
+                    }
+                }
+            ],
+            "year_ordinal": [
+                {
+                    "value": 2019,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 15,
+                        "annotationText": " 2019"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за июнь прошлого года "
+    ],
+    "Author": [],
+    "documentText": " за август 2019 года "
 }

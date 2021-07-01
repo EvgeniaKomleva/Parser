@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 82,
-        "month_ordinal": {
-            "value": 8,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 10
-            },
-            "id_interval": 0
-        },
-        "year_ordinal": {
-            "value": 2019,
-            "annotations": {
-                "annotationStart": 11,
-                "annotationEnd": 15
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "87",
+            "year_cardinal": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 1,
+                        "annotationEnd": 10,
+                        "annotationText": " год назад"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за август 2019 года "
+    ],
+    "Author": [],
+    "documentText": " год назад "
 }

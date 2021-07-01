@@ -1,38 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 136,
-        "quarter_ordinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 20
-            },
-            "id_interval": 0
-        },
-        "year_ordinal": {
-            "value": 2019,
-            "annotations": {
-                "annotationStart": 21,
-                "annotationEnd": 25
-            },
-            "id_interval": 0
-        },
-        "quarter_ordinal_stop": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 29,
-                "annotationEnd": 43
-            },
-            "id_interval": 1
-        },
-        "year_ordinal_stop": {
-            "value": 2020,
-            "annotations": {
-                "annotationStart": 44,
-                "annotationEnd": 48
-            },
-            "id_interval": 1
+    "DateInterval": [
+        {
+            "id": "141",
+            "half_year": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 20,
+                        "annotationText": " первого полугодия"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 21,
+                        "annotationEnd": 34,
+                        "annotationText": " прошлого года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " со второго квартала 2019 по третий квартал 2020 "
+    ],
+    "Author": [],
+    "documentText": " с первого полугодия прошлого года "
 }

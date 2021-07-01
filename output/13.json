@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 14,
-        "quarter_cardinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 14,
-                "annotationEnd": 25
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "19",
+            "half_year": [
+                {
+                    "value": -0.5,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 23,
+                        "annotationText": " последнее полугодие"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за последние два квартал "
+    ],
+    "Author": [],
+    "documentText": " за последнее полугодие "
 }

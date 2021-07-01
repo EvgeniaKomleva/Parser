@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 95,
-        "half_year": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 20
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 21,
-                "annotationEnd": 34
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "100",
+            "quarter_ordinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 18,
+                        "annotationText": " третий квартал"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": -2,
+                    "annotations": {
+                        "annotationStart": 19,
+                        "annotationEnd": 36,
+                        "annotationText": " позапрошлого года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за второе полугодие прошлого года "
+    ],
+    "Author": [],
+    "documentText": " за третий квартал позапрошлого года "
 }

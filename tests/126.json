@@ -1,54 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 127,
-        "day_ordinal": {
-            "value": "01",
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
-        },
-        "day_ordinal_stop": {
-            "value": "21",
-            "annotations": {
-                "annotationStart": 20,
-                "annotationEnd": 27
-            },
-            "id_interval": 1
-        },
-        "year_ordinal": {
-            "value": 2003,
-            "annotations": {
-                "annotationStart": 9,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
-        },
-        "year_ordinal_stop": {
-            "value": 2012,
-            "annotations": {
-                "annotationStart": 23,
-                "annotationEnd": 27
-            },
-            "id_interval": 1
-        },
-        "month_ordinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 9,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
-        },
-        "month_ordinal_stop": {
-            "value": 12,
-            "annotations": {
-                "annotationStart": 23,
-                "annotationEnd": 27
-            },
-            "id_interval": 1
+    "DateInterval": [
+        {
+            "id": "132",
+            "year_ordinal": [
+                {
+                    "value": 2018,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 7,
+                        "annotationText": " 2018"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с 01.02.2003 по 21.12.2012 "
+    ],
+    "Author": [],
+    "documentText": " в 2018 году "
 }

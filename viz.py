@@ -1,6 +1,7 @@
 import json
 import re
 
+import jsondiff
 import pymorphy2
 morph = pymorphy2.MorphAnalyzer()
 
@@ -28,7 +29,7 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
         dict_month_ordinal,
         dict_month_cardinal,
         dict_week_modifier, dict_count, dict_day_modifier, dict_half_year,dict_year_ordinal,
-             dict_quarter_modifier):
+             dict_quarter_modifier, id):
     #print(len(matches))
     dict_result = {}
     dict_num = 0
@@ -44,27 +45,37 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
     if len(split_index) == 0:
         split_index.append(0)
     split_index.append(len(line))
-    print("INTERVALS ", split_index)
+    #print("INTERVALS ", split_index)
     num_split = 0
     for split_loc in split_index:
         num_split = num_split + 1
-    result["id"] = str_num
+    interval = []
+    result["id"] = str(id)
+    id = id +1
     r = {}
     res_atr = []
     out= {}
     id_interval = 0
     #r["DI_count"] = len(split_index)-1
+    # фильтровать повторяющиеся мэтчи
+    matches_arr = []
+    match_num = -1
     for match in matches:
+        match_num = match_num + 1
+        matches_arr.append(match)
+        if match_num != 0:
+
+            match1 = matches_arr[match_num-1].fact.as_json
+            match2 = matches_arr[match_num].fact.as_json
+            diff_match = jsondiff.diff(match1, match2)
+            if len(diff_match) == 0:
+                continue
         for i in range(len(split_index)):
 
         #for match in matches:
 
             if match.span.start >= split_index[i] and match.span.stop <= split_index[i+1]:
-                try:
-                    print(list(match.fact.as_json.items()).pop()[1], "DI", i)
-                    id_interval = i
-                except:
-                    print("NO")
+
                 #if match.span.start<:
                 dict_num = dict_num + 1
                 dict_match = {}
@@ -83,13 +94,18 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
                 #dict_match["DI_count"] = len()
                 dict_match["start"] = match.span.start
                 dict_match["stop"] = match.span.stop
-
+                annotationText = ''
+                for tok in match.tokens:
+                    annotationText = annotationText +" "+tok.value
+                dict_match["annotationText"] = annotationText
                 dict_match["word"] = match.tree.root.main.value
                 before = morph.parse(match.tokens[0].value)[0]
                 p = morph.parse(match.tokens[0].normalized)[0]
                 try:
-                    dict_match["entity"] = list(match.fact.as_json.items()).pop()[0]
-                    dict_match["value"] = list(match.fact.as_json.items()).pop()[1]
+                    d_list = list(match.fact.as_json.items())
+                    dict_match["entity"] = list(match.fact.as_json.items())[0][0]
+                    dict_match["value"] = list(match.fact.as_json.items())[0][1]
+
                     #print(isinstance(dict_match["value"], int))
 
                         #print("DAAAAAte")
@@ -120,22 +136,24 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
                         "value":dict_match["value"],
                         "annotations":{
                             "annotationStart":dict_match["start"],
-                            "annotationEnd":dict_match["stop"]
+                            "annotationEnd":dict_match["stop"],
+                            "annotationText": dict_match["annotationText"]
                         },
-                        "id_interval":id_interval
+                        #"id_interval":id_interval
                     #}
                 }
                 #print(result_atr, "______________")
 
                 if (dict_match["entity"]) in result:
                     if result[(dict_match["entity"] )] != result_atr:
-                        result[(dict_match["entity"])+"_stop"] = result_atr
+                        result[(dict_match["entity"]).replace("_", "_end_")] = [result_atr]
+                        #result[(dict_match["entity"]).replace("_", "_start_")] = result[(dict_match["entity"])]
 
                 else:
-                    result[(dict_match["entity"])] = result_atr
+                    result[(dict_match["entity"])] = [result_atr]
                 #print("____________", result)
-                r["DateIntervals"] = result
-                r["documentText"]= line
+                r["DateInterval"] = [result]
+
                 #"DI_index": interval_index
 
         #print(r)
@@ -230,4 +248,4 @@ def viz(str_num, date, line, matches, dict_num_day_ordinal,
             print("count: ", skip_none(date.count))
             dict_count["{}".format(line)] = skip_none(date.count)
     #out[]
-    return dict_result, date, result, r
+    return dict_result, date, result, r, id

@@ -1,14 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 27,
-        "week_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 21
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "32",
+            "day_ordinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 19,
+                        "annotationText": " два прошлых дня"
+                    }
+                }
+            ],
+            "day_cardinal": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 8,
+                        "annotationEnd": 19,
+                        "annotationText": " прошлых дня"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за предыдущую неделю "
+    ],
+    "Author": [],
+    "documentText": " за два прошлых дня "
 }

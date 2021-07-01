@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 17,
-        "week_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 18
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "22",
+            "week_cardinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 14,
+                        "annotationEnd": 24,
+                        "annotationText": " три недели"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за прошлую неделю "
+    ],
+    "Author": [],
+    "documentText": " за последние три недели "
 }

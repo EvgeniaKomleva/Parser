@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 16,
-        "day_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 16
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "21",
+            "day_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 14,
+                        "annotationEnd": 21,
+                        "annotationText": " два дня"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за прошлый день "
+    ],
+    "Author": [],
+    "documentText": " за последние два дня "
 }

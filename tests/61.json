@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 62,
-        "quarter_cardinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "67",
+            "month_cardinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 12,
+                        "annotationText": " 3 месяца"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за 1 квартал "
+    ],
+    "Author": [],
+    "documentText": " за 3 месяца "
 }

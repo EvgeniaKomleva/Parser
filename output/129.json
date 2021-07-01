@@ -1,14 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 130,
-        "month_ordinal": {
-            "value": 4,
-            "annotations": {
-                "annotationStart": 26,
-                "annotationEnd": 32
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "135",
+            "year_end_ordinal": [
+                {
+                    "value": 2013,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 15,
+                        "annotationText": " 2013"
+                    }
+                }
+            ],
+            "year_start_ordinal": [
+                {
+                    "value": 2012,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 7,
+                        "annotationText": " 2012"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с двадцать второго числа апреля месяца "
+    ],
+    "Author": [],
+    "documentText": " с 2012 по 2013 "
 }

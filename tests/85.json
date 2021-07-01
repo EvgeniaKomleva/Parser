@@ -1,14 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 86,
-        "quarter_ordinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 18
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "91",
+            "month_ordinal": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 10,
+                        "annotationText": " апрель"
+                    }
+                }
+            ],
+            "year_ordinal": [
+                {
+                    "value": 2008,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 15,
+                        "annotationText": " 2008"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за второй квартал "
+    ],
+    "Author": [],
+    "documentText": " за апрель 2008 "
 }

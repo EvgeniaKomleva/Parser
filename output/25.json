@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 26,
-        "day_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 19
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "31",
+            "year_modifier": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 15,
+                        "annotationText": " прошлый год"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за предыдущий день "
+    ],
+    "Author": [],
+    "documentText": " за прошлый год "
 }

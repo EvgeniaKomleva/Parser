@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 119,
-        "month_cardinal": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 17
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "124",
+            "month_ordinal": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 9,
+                        "annotationText": " апреле"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " в прошлом месяце "
+    ],
+    "Author": [],
+    "documentText": " в апреле "
 }

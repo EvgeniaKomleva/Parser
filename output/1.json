@@ -1,14 +1,51 @@
 {
-    "DateIntervals": {
-        "id": 2,
-        "day_ordinal": {
-            "value": 0,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 11
-            },
-            "id_interval": 0
+    "Author": [
+        {
+            "id": "4",
+            "firstname": [
+                {
+                    "value": "павел",
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 34,
+                        "annotationText": "Иванова Павла Петровича"
+                    }
+                }
+            ],
+            "surname": [
+                {
+                    "value": "иванов",
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 34,
+                        "annotationText": "Иванова Павла Петровича"
+                    }
+                }
+            ],
+            "patronymic_name": [
+                {
+                    "value": "пётр",
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 34,
+                        "annotationText": "Иванова Павла Петровича"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "firstname": [
+                {
+                    "value": "мария",
+                    "annotations": {
+                        "annotationStart": 38,
+                        "annotationEnd": 43,
+                        "annotationText": "Марии"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за сегодня "
+    ],
+    "documentText": "справка от Иванова Павла Петровича  и Марии"
 }

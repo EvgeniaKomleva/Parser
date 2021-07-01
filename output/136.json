@@ -1,46 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 137,
-        "month_ordinal": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 9
-            },
-            "id_interval": 0
-        },
-        "month_ordinal_stop": {
-            "value": 5,
-            "annotations": {
-                "annotationStart": 13,
-                "annotationEnd": 16
-            },
-            "id_interval": 1
-        },
-        "year_ordinal": {
-            "value": 2019,
-            "annotations": {
-                "annotationStart": 17,
-                "annotationEnd": 21
-            },
-            "id_interval": 1
-        },
-        "quarter_ordinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 37,
-                "annotationEnd": 51
-            },
-            "id_interval": 3
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 52,
-                "annotationEnd": 65
-            },
-            "id_interval": 3
+    "DateInterval": [
+        {
+            "id": "142",
+            "quarter_ordinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 20,
+                        "annotationText": " третьего квартала"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": 0,
+                    "annotations": {
+                        "annotationStart": 21,
+                        "annotationEnd": 34,
+                        "annotationText": " текущего года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " с января по май 2019 и с первого по третий квартал прошлого года "
+    ],
+    "Author": [],
+    "documentText": " с третьего квартала текущего года "
 }

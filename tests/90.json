@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 91,
-        "quarter_cardinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 14,
-                "annotationEnd": 27
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "96",
+            "quarter_ordinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 18,
+                        "annotationText": " второй квартал"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за 2 квартал прошлого года "
+    ],
+    "Author": [],
+    "documentText": " за второй квартал "
 }

@@ -1,22 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 80,
-        "month_ordinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
-        },
-        "year_ordinal": {
-            "value": 2012,
-            "annotations": {
-                "annotationStart": 9,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "85",
+            "month_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 1,
+                        "annotationEnd": 11,
+                        "annotationText": " два месяца"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за март 2012го "
+    ],
+    "Author": [],
+    "documentText": " два месяца назад "
 }

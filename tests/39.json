@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 40,
-        "day_cardinal": {
-            "value": 20,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 17
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "45",
+            "year_modifier": [
+                {
+                    "value": 4,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 26,
+                        "annotationText": " предыдущих года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за двадцать дней "
+    ],
+    "Author": [],
+    "documentText": " за четыре предыдущих года "
 }

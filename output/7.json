@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 8,
-        "quarter_modifier": {
-            "value": -0.5,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 21
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "13",
+            "day_ordinal": [
+                {
+                    "value": -1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 9,
+                        "annotationText": " вчера"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за последний квартал "
+    ],
+    "Author": [],
+    "documentText": " за вчера "
 }

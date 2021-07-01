@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 94,
-        "month_ordinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 11
-            },
-            "id_interval": 0
-        },
-        "year_modifier": {
-            "value": -1,
-            "annotations": {
-                "annotationStart": 12,
-                "annotationEnd": 25
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "99",
+            "quarter_ordinal": [
+                {
+                    "value": 1,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 18,
+                        "annotationText": " первый квартал"
+                    }
+                }
+            ],
+            "year_modifier": [
+                {
+                    "value": 0,
+                    "annotations": {
+                        "annotationStart": 19,
+                        "annotationEnd": 32,
+                        "annotationText": " текущего года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за февраль прошлого года "
+    ],
+    "Author": [],
+    "documentText": " за первый квартал текущего года "
 }

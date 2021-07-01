@@ -1,22 +1,29 @@
 {
-    "DateIntervals": {
-        "id": 115,
-        "month_ordinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 3,
-                "annotationEnd": 8
-            },
-            "id_interval": 0
-        },
-        "year_ordinal": {
-            "value": 2012,
-            "annotations": {
-                "annotationStart": 9,
-                "annotationEnd": 13
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "120",
+            "month_end_ordinal": [
+                {
+                    "value": 12,
+                    "annotations": {
+                        "annotationStart": 11,
+                        "annotationEnd": 18,
+                        "annotationText": " декабрь"
+                    }
+                }
+            ],
+            "month_start_ordinal": [
+                {
+                    "value": 6,
+                    "annotations": {
+                        "annotationStart": 3,
+                        "annotationEnd": 7,
+                        "annotationText": " июня"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " в марте 2012 года "
+    ],
+    "Author": [],
+    "documentText": " с июня по декабрь "
 }

@@ -1,1 +1,19 @@
-{"text":"за 2 полугодя "}
+{
+    "DateInterval": [
+        {
+            "id": "71",
+            "quarter_cardinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 16,
+                        "annotationText": " три квартала"
+                    }
+                }
+            ]
+        }
+    ],
+    "Author": [],
+    "documentText": " за три квартала "
+}

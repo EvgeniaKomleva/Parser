@@ -1,14 +1,49 @@
 {
-    "DateIntervals": {
-        "id": 141,
-        "day_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 22,
-                "annotationEnd": 29
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "146",
+            "quarter_end_ordinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 29,
+                        "annotationEnd": 43,
+                        "annotationText": " третий квартал"
+                    }
+                }
+            ],
+            "year_end_ordinal": [
+                {
+                    "value": 2020,
+                    "annotations": {
+                        "annotationStart": 44,
+                        "annotationEnd": 48,
+                        "annotationText": " 2020"
+                    }
+                }
+            ],
+            "quarter_start_ordinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 20,
+                        "annotationText": " второго квартала"
+                    }
+                }
+            ],
+            "year_start_ordinal": [
+                {
+                    "value": 2019,
+                    "annotations": {
+                        "annotationStart": 21,
+                        "annotationEnd": 25,
+                        "annotationText": " 2019"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " справка Сидорова pdf три дня назад "
+    ],
+    "Author": [],
+    "documentText": " со второго квартала 2019 по третий квартал 2020 "
 }

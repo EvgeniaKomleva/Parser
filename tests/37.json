@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 38,
-        "day_cardinal": {
-            "value": 3,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 11
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "43",
+            "week_cardinal": [
+                {
+                    "value": 2,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 25,
+                        "annotationText": " две предыдущих недели"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за три дня "
+    ],
+    "Author": [],
+    "documentText": " за две предыдущих недели "
 }

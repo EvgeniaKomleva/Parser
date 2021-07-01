@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 74,
-        "week_cardinal": {
-            "value": 2,
-            "annotations": {
-                "annotationStart": 1,
-                "annotationEnd": 11
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "79",
+            "year_cardinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 12,
+                        "annotationText": " три года"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " две недели назад "
+    ],
+    "Author": [],
+    "documentText": " за три года "
 }

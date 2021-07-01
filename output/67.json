@@ -1,14 +1,19 @@
 {
-    "DateIntervals": {
-        "id": 68,
-        "year_modifier": {
-            "value": 1,
-            "annotations": {
-                "annotationStart": 4,
-                "annotationEnd": 12
-            },
-            "id_interval": 0
+    "DateInterval": [
+        {
+            "id": "73",
+            "month_cardinal": [
+                {
+                    "value": 3,
+                    "annotations": {
+                        "annotationStart": 4,
+                        "annotationEnd": 12,
+                        "annotationText": " 3 месяца"
+                    }
+                }
+            ]
         }
-    },
-    "documentText": " за один год "
+    ],
+    "Author": [],
+    "documentText": " за 3 месяца "
 }

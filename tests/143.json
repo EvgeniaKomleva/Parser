@@ -1,0 +1,18 @@
+{
+    "Author": [
+        {
+            "id": "151",
+            "firstname": [
+                {
+                    "value": "иванов",
+                    "annotations": {
+                        "annotationStart": 7,
+                        "annotationEnd": 13,
+                        "annotationText": "Иванов"
+                    }
+                }
+            ]
+        }
+    ],
+    "documentText": " отчет Иванов вики xlsx за прошлый месяц "
+}
