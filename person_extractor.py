@@ -47,7 +47,9 @@ def person_extract(line, str_num, id):
 
                 name = span.fact.as_dict['first']
                 p = morph.parse(name)[0]
-
+                if p.tag.case != 'gent':
+                    #return all_result_per, id
+                    continue
                 name = p.normal_form
                 firstname = [
                     {
