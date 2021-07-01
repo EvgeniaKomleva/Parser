@@ -1,18 +1,19 @@
 {
-    "Author": [
+    "DateInterval": [
         {
-            "id": "151",
-            "firstname": [
+            "id": "150",
+            "month_cardinal": [
                 {
-                    "value": "иванов",
+                    "value": -1,
                     "annotations": {
-                        "annotationStart": 7,
-                        "annotationEnd": 13,
-                        "annotationText": "Иванов"
+                        "annotationStart": 24,
+                        "annotationEnd": 40,
+                        "annotationText": " за прошлый месяц"
                     }
                 }
             ]
         }
     ],
+    "Author": [],
     "documentText": " отчет Иванов вики xlsx за прошлый месяц "
 }
