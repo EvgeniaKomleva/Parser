@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?OntoDPSData docID="3060125" markupID="2011642" OntoTechnologyVersion="3.57.13.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:BasicEntity="http://www.abbyy.com/ns/BasicEntity#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:Aux="http://www.abbyy.com/ns/Aux#">
+	<BasicEntity:DateSimplified rdf:nodeID="bnodeAD40733F-6237-4B3B-A0A5-06AC9CEA695B">
+		<BasicEntity:ds_month_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</BasicEntity:ds_month_number>
+		<BasicEntity:ds_day rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</BasicEntity:ds_day>
+		<BasicEntity:ds_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</BasicEntity:ds_year>
+	</BasicEntity:DateSimplified>
+	<BasicEntity:DateSimplified rdf:nodeID="bnode7F720799-E7DB-4439-800E-459545958014">
+		<BasicEntity:ds_month_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</BasicEntity:ds_month_number>
+		<BasicEntity:ds_day rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</BasicEntity:ds_day>
+		<BasicEntity:ds_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</BasicEntity:ds_year>
+	</BasicEntity:DateSimplified>
+	<BasicEntity:DateSimplified rdf:nodeID="bnodeECDA920C-B251-481A-9F15-BB684492015C">
+		<BasicEntity:ds_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</BasicEntity:ds_year>
+	</BasicEntity:DateSimplified>
+	<Aux:TextAnnotations rdf:nodeID="bnodeD1A67F93-60AD-4567-86C8-15EE28CA8C5A">
+		<Aux:document_text xml:lang="en-US">MEMORANDUM OF AGREEMENT FOR EMPLOYEE SERVICES Middle Tennessee State University Tennessee Board of Regents VENDOR PARTY PROCURING PARTY This memorandum signifies agreement of the above parties concerning the provision of employee services. The agreement is as follows: 1. Vendor agrees to furnish the services of its employee, Mr. Luther Buie, Social Security No.              who will perform the following services for procuring party: As a 2007 Maxine Smith Fellow, participating in various Fellowship activities and working on a specified project in conjunction with Dr. Warren Nichols at Volunteer State Community College. 2. Compensation to vendor party - Rate of $400.00 stipend plus benefits per month for services and travel reimbursement. Travel reimbursement is subject to the limits and rules set forth in the Tennessee Board of Regents Travel Policy. Maximum liability $8,000.00. 3. Payment will be made to vendor party by procuring party after completion of service and after receipt of an official invoice from the institution’s business office with copies of the Fellow’s travel claim and monthly activity report: Tennessee Board of Regents 1415 Murfreesboro Road, Suite 340 Nashville, Tennessee 37217 4. Contract term: February 1,2007 - November 30,2007. The continuation of this contract is subject to the allotment of state and or federal funds. 5. Either party may terminate this agreement by giving written notice to the other at least 30 days before the effective date of termination. In that event, vendor shall be entitled to receive just and equitable compensation for any satisfactory work completed as of the termination date. In addition, procuring party shall have the right to immediately terminate this agreement and withhold payments in excess of fair compensation for work completed in the event that the employee fails to perform in a timely and proper manner or breaches any material term of this agreement. 6. This agreement cannot be assigned or subcontracted without the written consent of all parties. 7. During the performance of this contract both parties warrant that they will not discriminate against any employee or applicant for employment because of race, age, religion, creed, color, sex, disability, veteran status or national origin. The parties will take affirmative action to ensure that applicants are employed and that employees are treated during employment without regard to their race, religion, creed, color, sex, disability, or national origin. Such action shall include, but not be limited to, the following: employment, upgrading, demotion, transfer; recruitment or recruitment advertising; layoff or termination; rates of pay or other forms of compensation; and selection available to employees and applicants for employment. Dated this 9th day of February 2007. Middle Tennessee State University                  Tennessee Board of Regents BY: Sidney McPhei President BY: Charles W. Manning Chancellor</Aux:document_text>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode82E1EB54-AB04-4D73-91F8-FAA47FD0A708">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">443</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">447</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeECDA920C-B251-481A-9F15-BB684492015C"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode9629D8DD-BD6C-4F62-8504-467D9087C809">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1254</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1270</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode7F720799-E7DB-4439-800E-459545958014"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeD453DE93-2EDC-4654-88DD-AF85653FF1F3">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2799</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2823</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeAD40733F-6237-4B3B-A0A5-06AC9CEA695B"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+	</Aux:TextAnnotations>
+</rdf:RDF>
